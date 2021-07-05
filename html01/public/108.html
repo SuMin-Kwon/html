@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트 상자안 배경이미지를 반투명하게</title>
+	<style>
+		div.background {
+			background : url(../../img/button.jpg) repeat;
+			border-style: solid;
+			border-color: red;
+			border-width: 1px;
+		}
+		div.box {
+			margin:30px;
+			background-color: rgba(255,255,255,0.5);
+			border-style: solid;
+			border-width: 2px;
+			border-color: blue;
+			/*opacity: 0.9;*/
+		}
+		div.box p {
+			margin : 5%;
+			font-weight: bold;
+			color: #000000;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="background">
+		<div class="box">
+			<p>HTML5 웹 프로그래밍</p>
+		</div>
+	</div>
+</body>
+</html>

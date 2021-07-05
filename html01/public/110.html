@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가시성 속성과 디스플레이 속성 비교하기</title>
+	<style>
+		.v1{
+			visibility: hidden;
+			border-width: 1px;
+			border-style: dotted;
+			border-color: red;
+		}
+		.v2{
+			visibility: visible;
+			border-width: 1px;
+			border-style: dotted;
+			border-color: red;
+		}
+		.v3{
+			display: none;
+			border-width: 1px;
+			border-style: solid;
+			border-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="v1">
+		<img src="../../img/button.jpg" alt="작은이미지">
+	</div>
+	<div class="v2">
+		<img src="../../img/button.jpg" alt="작은이미지">
+	</div>
+	<div class="v3">
+		<img src="../../img/button.jpg" alt="작은이미지">
+	</div>
+	<div class="v2">
+		<img src="../../img/button.jpg" alt="작은이미지">
+	</div>
+</body>
+</html>

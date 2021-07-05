@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀 테두리 출력하기</title>
+	<style>
+		td,th {
+			border-width: 2px;
+			border-style: solid;
+			border-color: black;
+		}
+		#tb1 {
+			border-width: 3px;
+			border-style: solid;
+			border-color: red;
+			background-color: yellow;
+			border-collapse: separate;
+		}
+		#tb2 {
+			border-width: 3px;
+			border-style: solid;
+			border-color: red;
+			background-color: yellow;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<table id="tb1" width="350">
+		<tr>
+			<th>table border-collapse</th>
+			<td>separate 적용</td>
+		</tr>
+	</table>
+	<p></p>
+	<table id="tb2" width="350">
+		<tr>
+			<th>table border-collapse</th>
+			<td>collapse 적용</td>
+		</tr>
+	</table>
+</body>
+</html>

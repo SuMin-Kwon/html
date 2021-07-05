@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow 속성 사용하기</title>
+	<style>
+		div {
+			border-width : 3px;
+			border-style : solid;
+			border-color: #73ad21;
+		}
+		.img1{
+			float : right;
+		}
+		.fix{
+			overflow :auto;
+		}
+		.img2{
+				float : left;
+		}
+	</style>
+</head>
+<body>
+	<p>이미지가 박스 영역을 벗어남</p>
+	<div><img class="img1" src="../../img/logo.jpg" alt="image" width="400" height="140">
+	이미지가 오른쪽 정렬로 되어 있는데, 박스 영역을 벗어났습니다.	
+	</div>
+	<p  style="clear:right">overflow :auto; 속성을 사용하여 해결</p>
+	<div class="fix"><img class="img2" src="../../img/logo.jpg" alt="image" width="140" height="140">
+	이미지가 박스 영역을 벗어날 경우에는 overflow 속성을 auto로 설정하여 해결합니다.
+	</div>
+</body>
+</html>

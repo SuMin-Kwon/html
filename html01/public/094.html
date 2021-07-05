@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스에 그림자 효과주기</title>
+	<style>
+		body{
+			font-weight: bold;
+			font-size: 12px;
+		}
+		h1 {
+			width: 200px;		
+			height: 100px;
+		}
+		.boxshadow1{
+			background-color: yellow;
+			border-style: solid;
+			border-width: 5px;
+			border-color: blue;
+			box-shadow: 20px 20px; /*그림자 효과 디폴트값*/
+		}
+		.boxshadow2{
+			background-color: orange;
+			border-style: solid;
+			border-width: 5px;
+			border-color: red;
+			box-shadow: 20px 20px 10px red;
+		}
+		.boxshadow3{
+			background-color: silver;
+			border-style: solid;
+			border-width: 5px;
+			border-color: black;
+			box-shadow: 20px 20px 30px -20px maroon;/* -가 붙어서 안쪽으로 번짐 */
+		}
+		.boxshadow4{
+			background-color: lime;
+			border-style: solid;
+			border-width: 5px;
+			border-color: olive;
+			box-shadow: 10px 10px 0px 10px fuchsia inset;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 class="boxshadow1">박스 그림자 스타일링 예제1</h1>
+	<br><br>
+	<h1 class="boxshadow2">박스 그림자 스타일링 예제2</h1>
+	<br><br>
+	<h1 class="boxshadow3">박스 그림자 스타일링 예제3</h1>
+	<br><br>
+	<h1 class="boxshadow4">박스 그림자 스타일링 예제4</h1>
+</body>
+</html>

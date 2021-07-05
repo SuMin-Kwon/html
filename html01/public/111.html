@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인라인 영식을 블록형식으로 변환하기</title>
+	<style>
+		p strong {
+			color: blue;
+			border-width: 1px;
+			border-style: dotted;
+			border-color: red;
+		}
+		p.bk strong {
+			display:block;
+			width:100px;
+			height: 100px;
+			color: blue;
+			border-width: 1px;
+			border-style: dotted;
+			border-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h3>[인라인 형식]</h3>
+	<p>세계적인 IT 기업에는 <strong>Google</strong><strong>Apple</strong><strong>Oracle</strong>등이 있습니다.</p>
+	<h3>[블록 형식]</h3>
+	<p class="bk">세계적인 IT 기업에는 <strong>Google</strong><strong>Apple</strong><strong>Oracle</strong>등이 있습니다.</p>
+</body>
+</html>
