@@ -1,0 +1,49 @@
+<!doctype>
+<html>
+<head>
+	<style>
+		div { 
+			color: white;
+		}
+		/* h2의 첫번째 문자의 스타일 */
+		h2:first-letter {
+			font-size : 30px;
+			color: red;
+			text-transform : uppercase;
+		}
+		/* h3의 첫번째 라인의 스타일 */
+		h3:first-line {
+			color: blue;
+		}
+		/* input의 내용을 입력할때 (초점이 맞춰짐) */
+		input:focus {
+			background-color : red;
+		}
+		/* div.d1의 check박스가 체크가 될때 */
+		input:checked + div.d1 {
+			background-color : gray;
+		}
+		/* div.d2의 check박스가 체크가 될때 */
+		input:checked + div.d2 {
+			background-color : black;
+		}		
+	
+	</style>
+</head>
+<body>
+	<h2>states pseudo-classes</h2>
+	<h3>문제 ) 대한민국 수도는? <br>
+	* What is the capital city of Korea?
+	</h3>
+	<P>정답 작성 : <input type="text"></P>
+	<h2>answer</h2>
+	힌트보기 : <input type="checkbox">
+	<div class="d1">
+		남대문이 있는 곳이죠.
+	</div>
+	정답보기 : <input type="checkbox">
+	<div class="d2">
+		서울
+	</div>
+</body>
+</html>
